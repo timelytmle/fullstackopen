@@ -1,0 +1,41 @@
+GET http://localhost:3001/api/persons/5
+
+###
+
+GET http://localhost:3001/api/persons/2
+
+###
+
+GET http://localhost:3001/api/persons
+
+###
+
+DELETE http://localhost:3001/api/persons/2
+
+###
+
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "waldo smith",
+    "number": "123414-65346"
+}
+
+###
+
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "waldo smith"
+}
+
+###
+
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "number": "123414-65346"
+}
